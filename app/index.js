@@ -1,6 +1,7 @@
 {
   const express = require('express');
   const senseHat = require('node-sense-hat');
+  const chalk = require('chalk');
   const _ = require('lodash');
   const bodyParser = require('body-parser');
   const supervisor = require(__dirname + '/libs/supervisor/index.js');
