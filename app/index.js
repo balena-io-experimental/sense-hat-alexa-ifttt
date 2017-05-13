@@ -2,7 +2,7 @@
   const express = require('express');
   const senseHat = require('node-sense-hat');
   const _ = require('lodash');
-  const bodyParser = require("body-parser");
+  const bodyParser = require('body-parser');
   const supervisor = require(__dirname + '/libs/supervisor/index.js');
   const app = express();
   const port = parseInt(process.env.PORT) || 80;
