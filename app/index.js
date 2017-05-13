@@ -1,6 +1,6 @@
 {
   const express = require('express');
-  const senseHat = require('node-sense-hat');
+  const senseLeds = require('sense-hat-led');
   const chalk = require('chalk');
   const _ = require('lodash');
   const bodyParser = require('body-parser');
@@ -170,7 +170,7 @@
     }
     console.log(chalk.cyan('Icon received! drawing...'));
     tmpIcon = req.params.icon;
-    senseHat.sense.setPixels(icons.tmpIcon);
+    senseLeds.setPixels(icons.tmpIcon);
     res.status(200).send('OK');
   });
 
@@ -184,19 +184,19 @@
       console.log(chalk.white('Supervisor status update: ' + status));
       switch (status) {
         case "Idle":
-          senseHat.sense.setPixels(icons.smile);
+          senseLeds.setPixels(icons.smile);
           break;
         case "Installing":
-          senseHat.sense.setPixels(icons.busy);
+          senseLeds.setPixels(icons.busy);
           break;
         case "Downloading":
-          senseHat.sense.setPixels(icons.download);
+          senseLeds.setPixels(icons.download);
           break;
         case "Starting":
-          senseHat.sense.setPixels(icons.fwd);
+          senseLeds.setPixels(icons.fwd);
           break;
         case "Stopping":
-          senseHat.sense.setPixels(icons.stop);
+          senseLeds.setPixels(icons.stop);
           setTimeout(() => {
             process.exit(1);
           }, 1000);
