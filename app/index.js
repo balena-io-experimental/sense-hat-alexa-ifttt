@@ -168,7 +168,6 @@
       return res.status(400).send('Bad Request');
     }
     console.log(chalk.cyan('Icon received! drawing...'));
-    tmpIcon = req.params.icon;
     senseLeds.setPixels(icons[req.params.icon]);
     res.status(200).send('OK');
   });
