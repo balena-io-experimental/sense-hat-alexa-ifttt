@@ -1,5 +1,5 @@
-# express-js-server
-a simple nodeJS webserver resin.io boilerplate application using expressJS
+# sense-hat supervisor state + Alexa via IFTTT
+
 
 ## Configure via [environment variables](https://docs.resin.io/management/env-vars/)
 
