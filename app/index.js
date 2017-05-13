@@ -14,7 +14,6 @@
   const blue = parseInt(process.env.BLUE) || 0;
   const b = [0, 0, 0];
   const c = [red, green, blue];
-  let tmpIcon;
 
   const icons = {
     "splash": [
@@ -170,7 +169,7 @@
     }
     console.log(chalk.cyan('Icon received! drawing...'));
     tmpIcon = req.params.icon;
-    senseLeds.setPixels(icons.tmpIcon);
+    senseLeds.setPixels(icons[req.params.icon]);
     res.status(200).send('OK');
   });
 
