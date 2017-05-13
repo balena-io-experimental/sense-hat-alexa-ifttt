@@ -1,0 +1,31 @@
+{
+  "name": "express-js-server",
+  "version": "0.0.1",
+  "description": "a simple nodeJS webserver resin.io boilerplate application using expressJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/resin-io-playground/express-js-server.git"
+  },
+  "author": "Carlo Maria Curinga <carlo@resin.io>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/resin-io-playground/express-js-server/issues"
+  },
+  "homepage": "https://github.com/resin-io-playground/express-js-server#readme",
+  "jshintConfig": {
+    "esversion": 6,
+    "strict": true
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "chalk": "^1.1.3",
+    "express": "^4.14.0",
+    "lodash": "^4.17.4",
+    "node-sense-hat": "0.0.2"
+  }
+}
