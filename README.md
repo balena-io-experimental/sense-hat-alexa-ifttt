@@ -1,5 +1,6 @@
 # sense-hat supervisor state + Alexa via IFTTT
 
+set up your IFTTT account with your Amazon Alexa [here](https://ifttt.com/amazon_alexa)
 
 ## Configure via [environment variables](https://docs.resin.io/management/env-vars/)
 
