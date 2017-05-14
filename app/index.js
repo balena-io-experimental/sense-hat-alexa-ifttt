@@ -164,7 +164,7 @@
     'use strict';
     // we want the icon parameter to be always sent, so if it's not passed we send an error response
     // we also want to limit the value to the possible ones
-    if (!req.params.icon || _.includes(icons, req.params.icon)) {
+    if (!req.params.icon || !_.includes(icons, req.params.icon)) {
       return res.status(400).send('Bad Request');
     }
     console.log(chalk.cyan('Icon received! drawing...'));
